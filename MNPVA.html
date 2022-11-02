@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+ <style>
+   body{
+     background-image:url(images/parks_bkg.jpg)
+  </style>
+  <head>
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MNPVA</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  </head>
+  <body>
+ <div class="row">
+    <div class="col-lg-12">
+      <h1 style="text-align:center"><span style="text-align: center">Montana National Parks</span></h1>
+      <h2 style="text-align:center"><span style="text-align: center">Volunteer Association</span></h2>
+      <h3 style="text-align:center"><span style="text-align: center">General Information</span></h3>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="nav nav-pills">
+            <li role="presentation"><a href="Home.html">Home</a></li>
+            <li role="presentation"><a href="Glacier.html">Glacier National Park</a></li>
+            <li role="presentation"><a href="Nez.html">NEZ PRICE TRIAL</a></li>
+            <li role="presentation"><a href="MNPVA.html">Volunteer Form</a></li>
+            <li role="presentation"><a href="Hotel.html">Hotel Reservation From</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <h3 style="text-align:center">The Montana National Parks Volunteer Association have joined together to promote Montana National Parks.</h3>
+     <h4 style="text-align: center">To keep visitors up to date on parks news and events, the Volunteer Association will distribute daily, weekly, and monthly newsletters.
+      </h4> 
+    <h4 style="text-align: center">To register and recieve a copy of the newsletters, complete and submit the following form. </h4>
+    <p>&nbsp;</p>
+    <table width="80%" border="2" align="center" cellspacing="10" summary="Montana volunteer form">
+      <tbody>
+        <form method="POST" id="newsletter" action="?">
+        <tr align="right">
+          <td colspan="2" style="text-align: center"><h1>Montana National Parks</h1>
+          <h1>Newsletter Information</h1></td>
+        </tr>
+        <tr>
+          <td width="20" height="30" align="right">E-mail</td>
+          <td width="80" align="left"><input type="email" name="email" id="email"></td>
+        </tr>
+        <tr>
+          <td width="20" height="80" align="right">I am Intrested in receiving a newsletter</td>
+          <td width="80" align="left"><p>
+            <label>
+              <input type="radio" name="Time" value="1" id="Time_0">
+              Daily</label>
+            <br>
+            <label>
+              <input type="radio" name="Time" value="2" id="Time_1">
+              Weekly</label>
+            <br>
+            <label>
+              <input type="radio" name="Time" value="3" id="Time_2">
+              Monthly</label>
+            <br>
+          </p></td>
+        </tr>
+        <tr>
+          <td width="20" height="30" align="right"><input type="submit" id="submit" name="submit" value="Submit"></td>
+          <td align="left"><input type="reset" id="reset" value="Reset" name="reset"></td>
+        </tr>
+    </form>
+      </tbody>
+    </table>
+    <p>&nbsp;</p>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+ <footer>Benjamin Marks</footer>
+<footer>January 29, 2018</footer>
+    </div>
+  </div>
+   <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  </body>
+</html>

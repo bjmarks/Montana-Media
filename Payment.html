@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+ <style>
+	 body{
+		 background-image:url(images/parks_bkg.jpg)
+	
+	</style>
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>payment</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+  </head>
+  <body>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="file:///E|/web design/montana parks/js/jquery-1.11.3.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="file:///E|/web design/montana parks/js/bootstrap.js"></script>
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 style="text-align:center">Payments Form</h1>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="nav nav-pills">
+            <li role="presentation"><a href="index.html">Home</a></li>
+            <li role="presentation"><a href="Glacier National Park.html">Glacier National Park</a></li>
+            <li role="presentation"><a href="Nez Prece Trail.html">NEZ PRICE TRIAL</a></li>
+            <li role="presentation"><a href="MNPVA.html">Volunteer Form</a></li>
+            <li role="presentation"><a href="HotelReservationForm.html">Hotel Reservation From</a></li>
+            <li role="presentation"><a href="Payment.html">Payment From</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <form id="payment" name="Payment" method="post">
+      <table width="80%" border="2" align="center" cellspacing="10" summary="Payment Form">
+        <tbody>
+          <tr align="left">
+            <td colspan="2">Billing Information (required)</td>
+          </tr>
+          <tr>
+            <td width="20" align="right">First Name</td>
+            <td width="80" align="left"><input name="firstName" type="text" required id="firstName" form="payment" tabindex="1" title="First Name"></td>
+          </tr>
+          <tr>
+            <td width="20" align="right">Last Name</td>
+            <td width="80" align="left"><input name="lastName" type="text" required id="lastName" form="payment" tabindex="2" title="Last Name"></td>
+          </tr>
+          <tr>
+            <td width="20" align="right">Street Address</td>
+            <td width="80" align="left"><input name="streetAddress" type="text" required id="streetAddress" form="payment" tabindex="3" title="Street Address"></td>
+          </tr>
+          <tr>
+            <td width="20" align="right">Street Address(2)</td>
+            <td width="80" align="left"><input name="streetAddress2" type="text" id="streetAddress2" form="payment" tabindex="4" title="Street Address2"></td>
+          </tr>
+          <tr>
+            <td width="20" align="right">City </td>
+            <td width="80" align="left"><input name="city" type="text" required id="city" form="payment" tabindex="5" title="City"></td>
+          </tr>
+          <tr>
+            <td width="20" align="right">State</td>
+            <td width="80" align="left"><input name="state" type="text" required id="state" tabindex="6" title="State"></td>
+          </tr>
+          <tr>
+            <td width="20" align="right">Zip/Postal Code</td>
+            <td width="80" align="left"><input name="zip" type="text" pattern="[0-9]{5}" maxlength="5" required id="zip" form="payment" tabindex="7"></td>
+          </tr>
+          <tr>
+            <td width="20" align="right">Country</td>
+            <td width="80" align="left"><input name="country" type="text" required id="country" form="payment" tabindex="8" title="Country"></td>
+          </tr>
+          <tr>
+            <td width="20" align="right">Phone</td>
+            <td width="80" align="left"><input name="phoneNumber" type="tel" required id="phoneNumber" form="payment" tabindex="9"></td>
+          </tr>
+          <tr align="left">
+            <td colspan="2">Credit Card (required)</td>
+          </tr>
+          <tr align="center">
+            <td colspan="2"><p>
+              <label>
+                <input name="creditCard" type="radio" required id="RadioGroup1_0" form="payment" tabindex="10" title="Visa" value="radio">
+              </label>
+              
+              <label>
+                <img src="images/visa.png" alt="" width="74" height="49" title="visa"/>
+                <input name="creditCard" type="radio" required id="RadioGroup1_1" form="payment" tabindex="11" title="Master Card" value="radio">
+              <img src="images/MasterCard_early_1990s_logo.svg.png" alt="" width="79" height="49" title="Mastercard"/>              </label>
+              <label>
+                <input name="creditCard" type="radio" required id="RadioGroup1_2" form="payment" tabindex="12" title="American Express" value="radio">
+              <img src="images/amex.jpg" alt="" width="79" height="49" title="American Express"/>              </label>
+              
+              <label>
+                <input name="creditCard" type="radio" required id="RadioGroup1_3" form="payment" tabindex="13" title="Discover" value="radio">
+              </label>
+            <img src="images/image_thumb28.png" alt="" width="79" height="49" title="Discover"/></p></td>
+          </tr>
+          <tr>
+            <td width="20" align="right">Credit Card Number</td>
+            <td width="80" align="left"><input name="creditCard" type="number" required id="creditCard" form="payment" tabindex="14"></td>
+          </tr>
+          <tr>
+            <td width="20" align="right">Expiration Date</td>
+            <td width="80" align="left"><input name="expirationDate" type="month" required id="expirationDate" form="payment" max="2033-02" min="2018-02" tabindex="15" title="Experation Date"></td>
+          </tr>
+          <tr>
+            <td width="20" align="right">csc</td>
+            <td width="80" align="left"><input name="CSC" type="number" required id="CSC" form="payment" tabindex="16" maxlength="3"></td>
+          </tr>
+          <tr align="left">
+            <td colspan="2">Additional Information</td>
+          </tr>
+          <tr>
+            <td width="20" align="right">Contact Email</td>
+            <td width="80" align="left"><input name="email" type="email" required id="email" form="payment" tabindex="17" title="Email"></td>
+          </tr>
+          <tr>
+            <td width="20" align="right">Special Notes</td>
+            <td width="80" align="left"><textarea name="specialNotes" id="specialNotes" form="payment" tabindex="18" title="Special Notes"></textarea></td>
+          </tr>
+          <tr>
+            <td width="20" align="right"><input name="submit" type="submit" id="submit" form="payment" title="19" value="Submit"></td>
+            <td width="80" align="left"><input name="reset" type="reset" id="reset" form="payment" title="20" value="Reset"></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+    </div>
+  </div>
+  </body>
+</html>

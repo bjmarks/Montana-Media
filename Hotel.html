@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+ <style>
+   body{
+     background-image:url(images/parks_bkg.jpg)
+  </style>
+  <head>
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hotel Reservation Form</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  </head>
+  <body>
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 style="text-align:center">Montana National Parks <br>Hotel Reservation Form</h1>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="nav nav-pills">  
+  <li role="presentation"><a href="Home.html">Home</a></li>
+  <li role="presentation"><a href="Glacier.html">Glacier National Park</a></li>
+  <li role="presentation"><a href="Nez.html">Nez Perce Trail</a></li>
+  <li role="presentation"><a href="MNPVA.html">Volunteer Form</a></li>        
+  <li role="presentation"><a href="Hotel.html">Hotel Reservation From</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <table width="80%" border="2" align="center" cellspacing="10" summary="Hotel Reservation Form.">
+      <tbody>
+        <form method="POST" id="Hotel">
+        <tr>
+          <td width="20" align="right">Name</td>
+          <td width="80" align="left"><input name="fullName" type="text" required id="fullName" tabindex="1" size="80" maxlength="40"></td>
+        </tr>
+        <tr>
+          <td width="20" align="right">Address</td>
+          <td width="80" align="left"><input name="address" type="text" required id="address" tabindex="2" size="80" maxlength="40"></td>
+        </tr>
+        <tr>
+          <td width="20" align="right">City</td>
+          <td width="80" align="left"><input name="city" type="text" required id="city" tabindex="3" size="80" maxlength="40"></td>
+        </tr>
+        <tr>
+          <td width="20" align="right">State/ Zip Code</td>
+          <td width="80" align="left"><label for="state">State:</label>
+          <input name="state" type="text" required id="state" tabindex="4" size="10" maxlength="2">
+          <label for="zipCode">Zip Code:</label>
+          <input name="zipCode" type="text" required id="zipCode" tabindex="5" maxlength="5"></td>
+        </tr>
+        <tr>
+          <td width="20" align="right">E-mail Address</td>
+          <td width="80" align="left"><input name="email" type="email" required id="email" tabindex="6" size="80" maxlength="40"></td>
+        </tr>
+        <tr>
+          <td width="20" align="right">Hotels</td>
+          <td width="80" align="left"><p>
+            <label>
+              <input name="Hotels" type="checkbox" id="Hotels_0" tabindex="7" value="checkbox">
+              Montana National</label>
+            <br>
+            <label>
+              <input name="Hotels" type="checkbox" id="Hotels_1" tabindex="8" value="checkbox">
+              Montana Royal</label>
+            <br>
+            <label>
+              <input name="Hotels" type="checkbox" id="Hotels_2" tabindex="9" value="checkbox">
+              Garden Inn</label>
+            <br>
+            <label>
+              <input name="Hotels" type="checkbox" id="Hotels_3" tabindex="10" value="checkbox">
+              Montana Star</label>
+            <br>
+          </p></td>
+        </tr>
+        <tr>
+          <td width="20" align="right">Accommodations</td>
+          <td width="80" align="left"><select name="accomodations" size="2" required id="accomodations" tabindex="11">
+            <option value="1" selected>Single</option>
+            <option value="2">Double</option>
+            <option value="3">Suite</option>
+            <option value="4">Luxury </option>
+          </select></td>
+        </tr>
+        <tr>
+          <td width="20" align="right">Number of Nights</td>
+          <td width="80" align="left"><select name="numberofNights" required id="numberofNights" tabindex="12">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td width="20" align="right">Links</td>
+          <td width="80" align="left"><select name="links" required id="links" tabindex="13">
+            <option value="0" selected>Chose One </option>
+            <option value="1">One Night</option>
+            <option value="2">Two Nights</option>
+            <option value="3">Three Nights</option>
+            <option value="4">Four Nights</option>
+            <option value="5">Five Nights </option>
+            <option value="6">Six Nights</option>
+            <option value="7">Seven Nights</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td width="20" align="right">Comments</td>
+          <td width="80" align="left"><textarea name="comments" rows="3" id="comments" tabindex="14">Please add your comments</textarea></td>
+        </tr>
+        <tr>
+          <td width="20" align="right"><input name="submit" type="submit" id="submit" tabindex="15" value="Submit"></td>
+          <td width="80" align="left"><input name="reset" type="reset" id="reset" tabindex="16" value="Reset"></td>
+        </tr>
+    </form>
+      </tbody>
+    </table>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+ <footer>Benjamin Marks</footer>
+<footer>January 29, 2018</footer>
+    </div>
+  </div>
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  </body>
+</html>
